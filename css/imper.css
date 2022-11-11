@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'WoodenPlanks';
+    src: url('/pics/fonts/WoodenPlanks.ttf');
+}
+
+/* stretches page to edge*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white; 
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* title bar start */
+.box-wrapper {
+    height: 150px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-image: url('/pics/VPTX_0469_Wood_Albedo.jpg');
+} 
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'WoodenPlanks';
+    padding-top: 20px;
+}
+/* title bar end */
+
+/*menu bar start */
+.menu {
+    height: 50px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background-color: black;
+} 
+  
+li {
+    display: inline;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;    
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+}
+/* menu bar end */
+
+/* center bar */
+.container2 {
+    display: block;
+    height: 210px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    background-color: black;
+}
+
+.center_bar {    
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+/* end center bar */
+
+/* start image */
+img {
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    margin-left: 40%;
+    margin-top: 150px;
+    align-items: center;
+    aspect-ratio: auto;
+}
+
+.active {
+    color: blanchedalmond;
+}
+
+.email {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
