@@ -225,6 +225,21 @@ h2 {
 }
 /* end carousel */
 
+/* start about page */
+
+.about-head {
+    font-size: 40px;
+    text-align: left;
+}
+
+.about-text {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* end about page */
+
 .active {
     color: blanchedalmond;
 }
