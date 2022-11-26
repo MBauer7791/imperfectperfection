@@ -226,7 +226,6 @@ h2 {
 /* end carousel */
 
 /* start about page */
-
 .about-head {
     font-size: 40px;
     text-align: left;
@@ -253,6 +252,31 @@ h2 {
 /* start ring page */
 .ring-p {
     font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ring-p2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.ring-gallery-container {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    gap: 40px;
+    justify-content: center;
+    left: 30px;
+}
+
+.ring-image {
+    height: 120px;
+    width: 90px;
+}
+
+.ring-label {
+    font-size: 40px;
     text-align: center;
 }
 /* end rings page */
