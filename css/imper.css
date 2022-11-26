@@ -257,6 +257,27 @@ h2 {
 }
 /* end rings page */
 
+/* bracelets and cuffs begin */
+.bracelets-gallery-container {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    gap: 40px;
+    justify-content: center;
+    left: 30px;
+}
+
+.bracelets-image {
+    height: 120px;
+    width: 90px;
+}
+
+.bracelets-label {
+    font-size: 40px;
+    text-align: center;
+}
+/* bracelets and cuffs end */
+
 /* start woods page */
 /* Create two equal columns that floats next to each other */
 .column {
