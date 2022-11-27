@@ -249,3 +249,24 @@ h2 {
     text-align: center;
     margin: auto;
 }
+
+/* woods start */
+.woods-head {
+    font-size: 30px;
+}
+
+.woods-box {
+    border: solid 3px black;
+}
+
+.soft-woods {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.woods-p {
+    font-size: 20px;
+    text-align: center;
+}
+/* woods end */
