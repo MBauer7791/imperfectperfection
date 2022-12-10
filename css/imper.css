@@ -234,3 +234,48 @@ h2 {
     text-align: center;
     margin: auto;
 }
+
+/* begin finishes */
+.finish-head{
+    font-size: 30px;
+    text-align: center;
+}
+
+.finish-p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.finish-label {
+    font-size: 20px;
+}
+
+.finish-desc {
+    font-size: 20px;
+    grid-area: text;
+}
+
+.image-box {
+    display: grid;
+    grid:
+        'stain text text text text text';
+    grid-gap: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: black 3px solid;
+}
+
+.image-text {
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    border: red 3px solid;
+}
+
+.finish-image {
+    grid-area: stain;
+    width: 90px;
+    height: 90px;
+}
+/* end finishes */
