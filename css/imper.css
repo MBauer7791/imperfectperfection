@@ -254,6 +254,27 @@ h2 {
     margin: auto;
 }
 
+/* woods start */
+.woods-head {
+    font-size: 30px;
+}
+
+.woods-box {
+    border: solid 3px black;
+}
+
+.soft-woods {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.woods-p {
+    font-size: 20px;
+    text-align: center;
+}
+/* woods end */
+
 /* start ring page */
 .ring-p {
     font-size: 30px;
@@ -315,7 +336,7 @@ h2 {
   .wood-list {
     text-align: left;
   }
-=======
+  
 /* begin finishes */
 .finish-head{
     font-size: 30px;
