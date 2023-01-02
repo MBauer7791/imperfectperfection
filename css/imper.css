@@ -230,6 +230,20 @@ h2 {
 }
 /* end carousel */
 
+/* start about page */
+.about-head {
+    font-size: 40px;
+    text-align: left;
+}
+
+.about-text {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* end about page */
+
 .active {
     color: blanchedalmond;
 }
@@ -240,6 +254,68 @@ h2 {
     margin: auto;
 }
 
+/* start ring page */
+.ring-p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ring-p2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.ring-gallery-container {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    gap: 40px;
+    justify-content: center;
+    left: 30px;
+}
+
+.ring-image {
+    height: 120px;
+    width: 90px;
+}
+
+.ring-label {
+    font-size: 40px;
+    text-align: center;
+}
+/* end rings page */
+
+/* start woods page */
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    border: 5px solid green;
+    text-align: center; 
+    height: fit-content;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .woods-head {
+    font-size: 30px;
+  }
+
+  .column-text {
+    font-size: 20px;
+  }
+
+  .wood-list {
+    text-align: left;
+  }
+=======
 /* begin finishes */
 .finish-head{
     font-size: 30px;
@@ -285,5 +361,4 @@ h2 {
     text-indent: 280px;
     font-size: 20px;
 }
-
 /* end finishes */

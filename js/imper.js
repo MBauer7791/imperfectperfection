@@ -4,23 +4,23 @@ this.carouselOptions = ['previous', 'add', 'play', 'next'];
 this.carouselData = [
   {
     'id': '1',
-    'src': '1.jpg',
+    'src': '/pics/20220114_214003.jpg',
   },
   {
     'id': '2',
-    'src': '2.jpg',
+    'src': '/pics/20220419_161442.jpg',
   },
   {
     'id': '3',
-    'src': '3.jpg',
+    'src': '/pics/20220602_155518.jpg',
   },
   {
     'id': '4',
-    'src': '4.jpg',
+    'src': '/pics/20220507_233425.jpg',
   },
   {
     'id': '5',
-    'src': '5.jpg',
+    'src': '/pics/20220602_155247.jpg',
   }
 ];
 // items in view
