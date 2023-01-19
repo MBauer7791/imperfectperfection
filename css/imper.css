@@ -17,6 +17,7 @@ html {
 
 body {
     min-height: 100vh;
+    padding-bottom: 50px;
 }
 
 /* title bar start */
@@ -411,3 +412,7 @@ h2 {
     font-size: 20px;
 }
 /* end finishes */
+
+.post-div_space {
+    bottom: 50px;
+}
