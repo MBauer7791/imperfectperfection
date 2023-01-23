@@ -329,6 +329,11 @@ h2 {
     font-size: 40px;
     text-align: center;
 }
+
+.bracelets-text {
+    font-size: 30px;
+    text-align: center;
+}
   
 .bracelets-image:hover {
     transform: scale(2.0); /* (200% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -345,27 +350,33 @@ h2 {
     border: 5px solid green;
     text-align: center; 
     height: fit-content;
-  }
+}
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .woods-head {
-    font-size: 30px;
-  }
+.woods-head {
+  font-size: 30px;
+}
 
-  .column-text {
-    font-size: 20px;
-  }
+.column-text {
+  font-size: 20px;
+}
 
-  .wood-list {
-    text-align: left;
-  }
-  
+.wood-list {
+  text-align: left;
+}
+/* woods finish */
+
+.menu_space {
+  position: static;
+  top: 200px;
+}
+ 
 /* begin finishes */
 .finish-head{
     font-size: 30px;
@@ -412,7 +423,3 @@ h2 {
     font-size: 20px;
 }
 /* end finishes */
-
-.post-div_space {
-    bottom: 50px;
-}
