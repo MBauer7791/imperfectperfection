@@ -17,6 +17,7 @@ html {
 
 body {
     min-height: 100vh;
+    padding-bottom: 50px;
 }
 
 /* title bar start */
@@ -35,6 +36,11 @@ h1 {
     padding-top: 20px;
 }
 /* title bar end */
+
+.postmenu-space {
+    position: relative;
+    top: 100px;
+} /* for every page */
 
 /*menu bar start */
 .menu {
@@ -226,7 +232,6 @@ h2 {
 /* end carousel */
 
 /* start about page */
-
 .about-head {
     font-size: 40px;
     text-align: left;
@@ -250,9 +255,55 @@ h2 {
     margin: auto;
 }
 
+/* woods start */
+.woods-head {
+    font-size: 30px;
+}
+
+.woods-box {
+    border: solid 3px black;
+}
+
+.soft-woods {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.woods-p {
+    font-size: 20px;
+    text-align: center;
+}
+/* woods end */
+
 /* start ring page */
 .ring-p {
     font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ring-p2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.ring-gallery-container {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    gap: 40px;
+    justify-content: center;
+    left: 30px;
+}
+
+.ring-image {
+    height: 120px;
+    width: 90px;
+}
+
+.ring-label {
+    font-size: 40px;
     text-align: center;
 }
 /* end rings page */
@@ -299,29 +350,76 @@ h2 {
     border: 5px solid green;
     text-align: center; 
     height: fit-content;
-  }
+}
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .woods-head {
+.woods-head {
+  font-size: 30px;
+}
+
+.column-text {
+  font-size: 20px;
+}
+
+.wood-list {
+  text-align: left;
+}
+/* woods finish */
+
+.menu_space {
+  position: static;
+  top: 200px;
+}
+ 
+/* begin finishes */
+.finish-head{
     font-size: 30px;
-  }
+    text-align: center;
+}
 
-  .column-text {
+.finish-p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 5% 7% 85%;
+}
+
+.finish-desc {
     font-size: 20px;
-  }
+    margin-top: 40px;
+}
 
-  .wood-list {
-    text-align: left;
-  }
-  /* woods finish */
+.image-text {
+    width: auto;
+    font-size: 20px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    text-indent: 230px;
+}
 
-  .menu_space {
-    position: static;
-    top: 200px;
-  }
+.finish-image {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+
+.poly-para1 {
+    text-indent: 230px;
+    font-size: 20px;
+}
+
+.poly-para2 {
+    text-indent: 280px;
+    font-size: 20px;
+}
+/* end finishes */
