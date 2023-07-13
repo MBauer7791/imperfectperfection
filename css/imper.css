@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* end */
 
 html {
     background-color: white; 
@@ -79,12 +80,12 @@ li {
 /* end center bar */
 
 /* start image carousel */
-h2 {
+h2 {  /* element selector*/
     margin: 30px 0 80px 0;
     font-size: 40px;
 }
 
-.gallery {
+.gallery { /* class selector */
     width:100%;
     height: 500px;
 }
@@ -105,7 +106,7 @@ h2 {
  z-index: 0;
 }
 
-.gallery-item.gallery-item-selected {
+.gallery-item.gallery-item-selected { /* selects all elements with both name1 and name2 separated by . */
  box-shadow: 0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1);
  height: 300px;
  opacity: 1;
@@ -115,7 +116,7 @@ h2 {
 }
 
 .gallery-item.gallery-item-previous,
-.gallery-item.gallery-item-next {
+.gallery-item.gallery-item-next { /* selects all of name1 and all of name2 */
  height: 250px;
  opacity: 1;
  width: 250px;
@@ -142,30 +143,32 @@ h2 {
  margin: 40px 0 0 0;
 }
 
-.gallery-controls {
+.gallery-control-container {
  display: flex;
  justify-content: center;
  position: relative;
  margin: 10px 0;
 }
 
-.gallery-controls button {
+.gallery-controls button { /* selects all name1 within name2 */
  border: 0;
  cursor: pointer;
- font-size: 16px;
+ font-size: 20px;
  margin: 0 20px;
  padding: 0 12px;
 }
 
-.gallery-controls button:focus {
+.gallery-controls button:focus { /* selects the input element which has focus */
  outline: none;
 }
 
 .gallery-controls-previous {
  position: relative;
+ font-size: 20px;
+ margin-right: 20px;
 }
 
-.gallery-controls-previous::before {
+.gallery-controls-previous::before { /* Insert something before the content of each element */
  border: solid #000;
  border-width: 0 2px 2px 0;
  content: '';
@@ -174,18 +177,20 @@ h2 {
  left: -10px;
  padding: 2px;
  position: absolute;
- top: 0;
- transform: rotate(135deg) translateY(-50%);
+ top: 50%;
+ transform: rotate(135deg) translateY(50%);
  transition: left .15s ease-in-out;
  width: 4px;
 }
 
-.gallery-controls-previous:hover::before {
+.gallery-controls-previous:hover::before { /* on mouse over, insert something before the content of each element */
  left: -18px;
 }
 
 .gallery-controls-next {
  position: relative;
+ font-size: 20px;
+ margin-left: 20px;
 }
 
 .gallery-controls-next::before {
@@ -196,7 +201,7 @@ h2 {
  height: 4px;
  padding: 2px;
  position: absolute;
- right: -10px;
+ right: -17px;
  top: 50%;
  transform: rotate(-45deg) translateY(-50%);
  transition: right .15s ease-in-out;
@@ -204,7 +209,7 @@ h2 {
 }
 
 .gallery-controls-next:hover::before {
- right: -18px;
+ right: -25px;
 }
 
 .gallery-nav {
@@ -225,9 +230,9 @@ h2 {
  width: 10px;
 }
 
-.gallery-nav li.gallery-item-selected {
+/* .gallery-nav li.gallery-item-selected {
  background: #555;
-}
+} */
 /* end carousel */
 
 /* start about page */

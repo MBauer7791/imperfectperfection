@@ -37,11 +37,11 @@
         <div class="gallery">
             <div class="gallery-container">
                 <h2>Some of my projects</h2>
-                <img class="gallery-item gallery-item-first" src="/pics/20220114_214003.jpg">
-                <img class="gallery-item gallery-item-previous" src="/pics/20220419_161442.jpg">
-                <img class="gallery-item gallery-item-selected" src="/pics/20220602_155518.jpg">
-                <img class="gallery-item gallery-item-next" src="/pics/20220507_233425.jpg">
-                <img class="gallery-item gallery-item-last" src="/pics/20220602_155247.jpg">
+                <img class="gallery-item gallery-item-first slider-img" src="/pics/20220114_214003.jpg">
+                <img class="gallery-item gallery-item-previous slider-img" src="/pics/20220419_161442.jpg">
+                <img class="gallery-item gallery-item-selected slider-img" src="/pics/20220602_155518.jpg">
+                <img class="gallery-item gallery-item-next slider-img" src="/pics/20220507_233425.jpg">
+                <img class="gallery-item gallery-item-last slider-img" src="/pics/20220602_155247.jpg">
                 <ul class="gallery-nav">
                     <li class="gallery-nav-item gallery-item-first"></li>
                     <li class="gallery-nav-item gallery-item-previous"></li>
@@ -52,13 +52,9 @@
             </div>                
         </div>
 
-        <div class="gallery-controls">
-            <button class="gallery-controls-previous">
-                Previous
-            </button>
-            <button class="gallery-controls-next">
-                Next
-            </button>
+        <div>
+            <button class="button gallery-controls-previous" type="button" id="previous" on-click="prev()">Previous</button>
+            <button class="button gallery-controls-next" type="button" id="next" on-click="next()">Next</button>
         </div>
     </div>
 
