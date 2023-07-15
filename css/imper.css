@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'WoodenPlanks';
-    src: url('/pics/fonts/WoodenPlanks.ttf');
+    src: url('/images/fonts/WoodenPlanks.ttf');
 }
 
 /* stretches page to edge*/
@@ -37,11 +37,6 @@ h1 {
 }
 /* title bar end */
 
-.postmenu-space {
-    position: relative;
-    top: 100px;
-} /* for every page */
-
 /*menu bar start */
 .menu {
     height: 50px;
@@ -62,177 +57,41 @@ li {
 }
 /* menu bar end */
 
-/* center bar */
-.container2 {
-    display: block;
-    height: 150px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    background-color: black;
-}
-
-.center_bar {    
-    display: block;
-    width: 100%;
-    background-color: black;
-}
-/* end center bar */
-
 /* start image carousel */
 h2 {  /* element selector*/
     margin: 30px 0 80px 0;
     font-size: 40px;
 }
 
-.gallery { /* class selector */
-    width:100%;
-    height: 500px;
+.slider {
+    margin: 50px auto;
+    width: 50%;
 }
 
-.gallery-container {
- display: block;
- height: 450px;
- width: 100%;
- position: relative;
+.img-box {
+    width: 100%;
 }
 
-.gallery-item {
- height: 200px;
- opacity: .4;
- position: absolute;
- transition: all .3s ease-in-out;
- width: 200px;
- z-index: 0;
+.img {
+    height: 300px;
+    width: 300px;
 }
 
-.gallery-item.gallery-item-selected { /* selects all elements with both name1 and name2 separated by . */
- box-shadow: 0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1);
- height: 300px;
- opacity: 1;
- transform: translateX(-50%);
- width: 300px;
- z-index: 2;
+.btn {
+    border: none;
+    outline: none;
+    background: #888;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #ddd;
+    cursor: pointer;
+    margin: 10px auto;
 }
 
-.gallery-item.gallery-item-previous,
-.gallery-item.gallery-item-next { /* selects all of name1 and all of name2 */
- height: 250px;
- opacity: 1;
- width: 250px;
- z-index: 1;
+.btn:hover {
+ background: #111;
 }
 
-.gallery-item.gallery-item-previous {
- left: 30%;
- margin: 15px 0 0 0;
-}
-
-.gallery-item.gallery-item-next {
- left: 57%;
- margin: 15px 0 0 0;
-}
-
-.gallery-item.gallery-item-first {
- left: 22%;
- margin: 40px 0 0 0;
-}
-
-.gallery-item.gallery-item-last {
- right: 22%;
- margin: 40px 0 0 0;
-}
-
-.gallery-control-container {
- display: flex;
- justify-content: center;
- position: relative;
- margin: 10px 0;
-}
-
-.gallery-controls button { /* selects all name1 within name2 */
- border: 0;
- cursor: pointer;
- font-size: 20px;
- margin: 0 20px;
- padding: 0 12px;
-}
-
-.gallery-controls button:focus { /* selects the input element which has focus */
- outline: none;
-}
-
-.gallery-controls-previous {
- position: relative;
- font-size: 20px;
- margin-right: 20px;
-}
-
-.gallery-controls-previous::before { /* Insert something before the content of each element */
- border: solid #000;
- border-width: 0 2px 2px 0;
- content: '';
- display: inline-block;
- height: 4px;
- left: -10px;
- padding: 2px;
- position: absolute;
- top: 50%;
- transform: rotate(135deg) translateY(50%);
- transition: left .15s ease-in-out;
- width: 4px;
-}
-
-.gallery-controls-previous:hover::before { /* on mouse over, insert something before the content of each element */
- left: -18px;
-}
-
-.gallery-controls-next {
- position: relative;
- font-size: 20px;
- margin-left: 20px;
-}
-
-.gallery-controls-next::before {
- border: solid #000;
- border-width: 0 2px 2px 0;
- content: '';
- display: inline-block;
- height: 4px;
- padding: 2px;
- position: absolute;
- right: -17px;
- top: 50%;
- transform: rotate(-45deg) translateY(-50%);
- transition: right .15s ease-in-out;
- width: 4px;
-}
-
-.gallery-controls-next:hover::before {
- right: -25px;
-}
-
-.gallery-nav {
- bottom: -15px;
- display: flex;
- justify-content: center;
- list-style: none;
- padding: 0;
- position: absolute;
- width: 100%;
-}
-
-.gallery-nav li {
- background: #ccc;
- border-radius: 50%;
- height: 10px;
- margin: 0 16px;
- width: 10px;
-}
-
-/* .gallery-nav li.gallery-item-selected {
- background: #555;
-} */
 /* end carousel */
 
 /* start about page */
