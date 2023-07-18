@@ -73,7 +73,14 @@ h2 {  /* element selector*/
     height: 500px;
 }
 
+.divider {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+
 .btn {
+    display: inline;
     border: none;
     outline: none;
     background: #888;
