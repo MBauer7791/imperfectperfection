@@ -62,23 +62,6 @@ li {
 }
 /* menu bar end */
 
-/* center bar */
-.container2 {
-    display: block;
-    height: 150px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    background-color: black;
-}
-
-.center_bar {    
-    display: block;
-    width: 100%;
-    background-color: black;
-}
-/* end center bar */
-
 /* start image carousel */
 h2 {
     margin: 30px 0 80px 0;
@@ -169,7 +152,7 @@ h2 {
 .gallery-controls-previous::before {
  border: solid #000;
  border-width: 0 2px 2px 0;
- content: '';
+ content: 'ZZ';
  display: inline-block;
  height: 4px;
  left: -10px;
@@ -185,14 +168,14 @@ h2 {
  left: -18px;
 }
 
-.gallery-controls-next {
+/*.gallery-controls-next {
  position: relative;
-}
+}*/
 
 .gallery-controls-next::before {
  border: solid #000;
  border-width: 0 2px 2px 0;
- content: '';
+ content: 'JJ';
  display: inline-block;
  height: 4px;
  padding: 2px;
@@ -200,7 +183,7 @@ h2 {
  right: -10px;
  top: 50%;
  transform: rotate(-45deg) translateY(-50%);
- transition: right .15s ease-in-out;
+ transition: right .15s;
  width: 4px;
 }
 
