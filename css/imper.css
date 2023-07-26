@@ -331,3 +331,7 @@ h2 {  /* element selector*/
     font-size: 20px;
 }
 /* end finishes */
+
+.post-div_space {
+    bottom: 50px;
+}
