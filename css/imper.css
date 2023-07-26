@@ -18,6 +18,7 @@ html {
 
 body {
     min-height: 100vh;
+    padding-bottom: 50px;
 }
 
 /* title bar start */
@@ -61,16 +62,6 @@ li {
 h2 {  /* element selector*/
     margin: 30px 0 80px 0;
     font-size: 40px;
-}
-
-.slider {
-    margin: 50px auto;
-    width: 50%;
-}
-
-.img-box img{
-    width: 500px;
-    height: 500px;
 }
 
 .divider {
@@ -154,7 +145,7 @@ h2 {  /* element selector*/
     text-align: center;
 }
 
-.ring-gallery-container {
+.ring-gallery-container { /* reapply to div before popup if popup doesn't work */
     display: flex;
     flex-direction: row;
     height: 120px;
@@ -164,14 +155,65 @@ h2 {  /* element selector*/
 }
 
 .ring-image {
-    height: 120px;
-    width: 90px;
+    height: 200px;
+    width: 220px;
 }
 
 .ring-label {
     font-size: 40px;
     text-align: center;
 }
+
+ /* Popup container */
+ .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popupImg {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    visibility: hidden;
+    width: 160px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    left: 300px;
+    bottom: -5px;
+  }
+  
+  /* Popup arrow */
+  .popup .popupImg::after {
+    content: "";
+    position: relative;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 /* end rings page */
 
 /* bracelets and cuffs begin */
@@ -195,6 +237,11 @@ h2 {  /* element selector*/
     font-size: 40px;
     text-align: center;
 }
+
+.bracelets-text {
+    font-size: 30px;
+    text-align: center;
+}
   
 .bracelets-image:hover {
     transform: scale(2.0); /* (200% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -211,27 +258,33 @@ h2 {  /* element selector*/
     border: 5px solid green;
     text-align: center; 
     height: fit-content;
-  }
+}
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .woods-head {
-    font-size: 30px;
-  }
+.woods-head {
+  font-size: 30px;
+}
 
-  .column-text {
-    font-size: 20px;
-  }
+.column-text {
+  font-size: 20px;
+}
 
-  .wood-list {
-    text-align: left;
-  }
-  
+.wood-list {
+  text-align: left;
+}
+/* woods finish */
+
+.menu_space {
+  position: static;
+  top: 200px;
+}
+ 
 /* begin finishes */
 .finish-head{
     font-size: 30px;
@@ -278,3 +331,7 @@ h2 {  /* element selector*/
     font-size: 20px;
 }
 /* end finishes */
+
+.post-div_space {
+    bottom: 50px;
+}

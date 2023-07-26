@@ -1,6 +1,4 @@
-const fs = require("fs")
-const path = require("path")
-
+// When the user clicks on <div>, open the popup
 function picArray() {
     const results = fs.readdirSync(path.resolve(_dirname,"images"))
     console.log(results)
@@ -24,3 +22,9 @@ function next() {
 function setImg() {
     return slider_img.setAttribute('src', 'images/' + images[i]);
 }
+
+// Ring page popup gallery
+function showImg() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
