@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="/css/imper.css">
 </head>
 
-<body>
+<body onload="picArray()">
     <div class="box-wrapper">
         <div>
-            <h1 class="h1-align">Imperfect Perfection</h1>
+            <h1>Imperfect Perfection</h1>
         </div>
 
         <div>
@@ -21,7 +21,7 @@
                 <li><a class="active" href="/" style="color:#B8860B">Home</a></li>
                 <li><a href="/rings.html" style="color:#B8860B">Rings</a></li>
                 <li><a href="/bracelets.html" style="color:#B8860B">Bracelets and Cuffs</a></li>
-                <li><a href="/bow_ties.html" style="color:#B8860B">Bow Ties</a></li>
+                <li><a href="/bowties.html" style="color:#B8860B">Bow Ties</a></li>
                 <li><a href="/woods.html" style="color:#B8860B">Woods</a></li>
                 <li><a href="/finishes.html" style="color:#B8860B">Finishes</a></li>
             </ul>
@@ -33,36 +33,19 @@
                 <li><a href="/contacts.html" style="color:#B8860B">Contacts</a></li>
             </ul>
         </div>
-
-        <div class="gallery">
-            <div class="gallery-container">
+        <div>
                 <h2>Some of my projects</h2>
-                <img class="gallery-item gallery-item-first" src="/pics/20220114_214003.jpg">
-                <img class="gallery-item gallery-item-previous" src="/pics/20220419_161442.jpg">
-                <img class="gallery-item gallery-item-selected" src="/pics/20220602_155518.jpg">
-                <img class="gallery-item gallery-item-next" src="/pics/20220507_233425.jpg">
-                <img class="gallery-item gallery-item-last" src="/pics/20220602_155247.jpg">
-                <ul class="gallery-nav">
-                    <li class="gallery-nav-item gallery-item-first"></li>
-                    <li class="gallery-nav-item gallery-item-previous"></li>
-                    <li class="gallery-nav-item gallery-item-selected"></li>
-                    <li class="gallery-nav-item gallery-item-next"></li>
-                    <li class="gallery-nav-item gallery-item-last"></li>
-                </ul>
-            </div>                
+                <img src="images/20220114_214003.jpg" alt="" class="slider_img">
         </div>
-
-        <div class="gallery-controls">
-            <button class="gallery-controls-previous">
-                Previous
-            </button>
-            <button class="gallery-controls-next">
-                Next
-            </button>
+            
+        <div>
+                <button class="btn" onclick="prev()">Previous</button>
+                <div class="divider"></div>
+                <button class="btn" onclick="next()">Next</button>
+            </div>
         </div>
     </div>
 
     <script src="/js/imper.js"></script>
 </body>
-
 </html>
