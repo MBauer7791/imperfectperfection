@@ -2,7 +2,7 @@ const fs = require("fs")
 const path = require("path")
 
 function picArray() {
-    const results = fs. readdirSync(path.resolve(_dirname,"images"))
+    const results = fs.readdirSync(path.resolve(_dirname,"images"))
     console.log(results)
 }
 var slider_img=document.querySelector('.slider_img');
