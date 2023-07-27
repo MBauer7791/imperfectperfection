@@ -1,4 +1,4 @@
-// index pic carousel
+// When the user clicks on <div>, open the popup
 const fs = require("fs")
 const path = require("path")
 
