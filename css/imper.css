@@ -4,88 +4,36 @@
 }
 
 /* stretches page to edge*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* end */
+* {margin: 0; padding: 0; box-sizing: border-box;}
 
-html {
-    background-color: white; 
-    height: 100%;
-}
+html {background-color: white; height: 100%}
 
-body {
-    min-height: 100vh;
-    padding-bottom: 50px;
-}
+body {min-height: 100vh; padding-bottom: 50px;}
 
 /* title bar start */
-.box-wrapper {
-    height: 150px;
-    width: 100%;
-    display: block;
-    text-align: center;
-    background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');
-} 
+.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/pics/VPTX_0469_Wood_Albedo.jpg');} 
 
-h1 {
-    font-size: 100px;
-    font-weight: 900;
-    font-family: 'WoodenPlanks';
-    padding-top: 20px;
-}
+h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top: 20px;}
 /* title bar end */
 
 /*menu bar start */
-.menu {
-    height: 50px;
-    width: 100%;
-    display: block;
-    padding: 10px;
-    background-color: black;
-} 
+.menu {height: 50px; width: 100%; display: block; padding: 10px; background-color: black;} 
   
-li {
-    display: inline;
-    height: 40px;
-    width: 100%;
-    font-size: 20px;    
-    align-items: center;
-    text-align: center;
-    margin: 25px;
-}
+li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: center; text-align: center; margin: 25px;}
 /* menu bar end */
 
+h2 {margin: 30px 0 80px 0; font-size: 40px;}
+
 /* start image carousel */
-h2 {  /* element selector*/
-    margin: 30px 0 80px 0;
-    font-size: 40px;
-}
+.slider {margin: 50px auto; width: 50%;}
 
-.divider {
-    width: 50px;
-    height: auto;
-    display: inline-block;
-}
+.img-box img {width: 500px; height: 500px;}
 
-.btn {
-    display: inline;
-    border: none;
-    outline: none;
-    background: #888;
-    padding: 10px 30px;
-    font-size: 20px;
-    color: #ddd;
-    cursor: pointer;
-    margin: 10px auto;
-}
+.divider {width: 50px; height: auto; display: inline-block;}
 
-.btn:hover {
- background: #111;
-}
+.btn {display: inline; border: none; outline: none; background: #888; padding: 10px 30px; font-size: 20px; color: #ddd; cursor: pointer; margin: 10px auto;}
 
+.btn:hover {background: #111;}
 /* end carousel */
 
 /* start about page */
@@ -170,9 +118,6 @@ h2 {  /* element selector*/
     display: inline-block;
     cursor: pointer;
     margin-left: 30px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
   }
   
   /* The actual popup (appears on top) */
