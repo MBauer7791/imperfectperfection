@@ -4,18 +4,21 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 /* end */
 
-html {background-color: white; height: 100%;}
-
-body {min-height: 100vh;}
-
 /* title bar start */
 .box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
+
+html {background-color: white; height: 100%}
+
+body {min-height: 100vh; padding-bottom: 50px;}
+
+/* title bar start */
+.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/pics/VPTX_0469_Wood_Albedo.jpg');} 
 
 h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top: 20px;}
 /* title bar end */
 
 /*menu bar start */
-.menu {height: 50px; width: 100%; display: block; padding: 10px; background-color: black;}
+.menu {height: 50px; width: 100%; display: block; padding: 10px; background-color: black;} 
   
 li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: center; text-align: center; margin: 25px;}
 /* menu bar end */
@@ -109,3 +112,7 @@ h2 {  /* element selector*/
 
 .poly-para2 {text-indent: 280px; font-size: 20px;}
 /* end finishes */
+
+.post-div_space {
+    bottom: 50px;
+}
