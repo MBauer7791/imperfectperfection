@@ -1,11 +1,12 @@
 // index pic carousel
-const fs = require("fs")
-const path = require("path")
+import { readdirSync } from "fs";
+import { resolve } from "path";
 
 function picArray() {
-    const results = fs.readdirSync(path.resolve(_dirname,"images"))
+    const results = readdirSync(resolve(_dirname,"images"))
     console.log(results)
 }
+
 var slider_img=document.querySelector('.slider_img');
 var images=['/images/carousel/20220114_214003.jpg', '/images/carousel/20220804_185620.jpg', '/images/carousel/20220912_004333.jpg', '/images/carousel/20220912_004352.jpg', '/images/carousel/20220912_004400.jpg', '/images/carousel/IMG_1132.jpg', '/images/carousel/IMG_6256.jpg'];
 var i=0;
@@ -17,7 +18,7 @@ function prev() {
 }
 
 function next() {
-    if (i >= images.length-1) i=-1;
+    if(i >= images.length-1) i=-1;
     i++;
     return setImg();
 }
