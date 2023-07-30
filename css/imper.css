@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'WoodenPlanks';
-    src: url('/pics/fonts/WoodenPlanks.ttf');
+    src: url('/images/fonts/WoodenPlanks.ttf');
 }
 
 /* stretches page to edge*/
@@ -11,7 +11,7 @@ html {background-color: white; height: 100%}
 body {min-height: 100vh; padding-bottom: 50px;}
 
 /* title bar start */
-.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/pics/VPTX_0469_Wood_Albedo.jpg');} 
+.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
 
 h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top: 20px;}
 /* title bar end */
