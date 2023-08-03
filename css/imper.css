@@ -1,11 +1,12 @@
 /* local site: http://www.local.imperfectperfection.com/rings.html */
-@font-face {
-    font-family: 'WoodenPlanks';
-    src: url('/images/fonts/WoodenPlanks.ttf');
-}
+@font-face {font-family: 'WoodenPlanks'; src: url('/images/fonts/WoodenPlanks.ttf');}
 
 /* stretches page to edge*/
 * {margin: 0; padding: 0; box-sizing: border-box;}
+/* end */
+
+/* title bar start */
+.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
 
 html {background-color: white; height: 100%}
 
@@ -23,12 +24,13 @@ h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top
 li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: center; text-align: center; margin: 25px;}
 /* menu bar end */
 
-h2 {margin: 30px 0 80px 0; font-size: 40px;}
-
 /* start image carousel */
+h2 {  /* element selector*/
+    margin: 30px 0 80px 0; font-size: 40px;}
+
 .slider {margin: 50px auto; width: 50%;}
 
-.img-box img {width: 500px; height: 500px;}
+.img-box img{width: 500px; height: 500px;}
 
 .divider {width: 50px; height: auto; display: inline-block;}
 
@@ -38,70 +40,32 @@ h2 {margin: 30px 0 80px 0; font-size: 40px;}
 /* end carousel */
 
 /* start about page */
-.about-head {
-    font-size: 40px;
-    text-align: left;
-}
+.about-head {font-size: 40px; text-align: left;}
 
-.about-text {
-    font-size: 30px;
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-}
+.about-text {font-size: 30px; text-align: left; margin-left: 5%; margin-right: 5%;}
 /* end about page */
 
-.active {
-    color: blanchedalmond;
-}
+.active {color: blanchedalmond;}
 
-.email {
-    color: white;
-    text-align: center;
-    margin: auto;
+.email {color: white; text-align: center; margin: auto;
 }
 
 /* woods start */
-.woods-head {
-    font-size: 30px;
-}
+.woods-head {font-size: 30px;}
 
-.woods-box {
-    border: solid 3px black;
-}
+.woods-box {border: solid 3px black;}
 
-.soft-woods {
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-}
+.soft-woods {font-size: 25px; text-align: center; font-weight: bold;}
 
-.woods-p {
-    font-size: 20px;
-    text-align: center;
-}
+.woods-p {font-size: 20px; text-align: center;}
 /* woods end */
 
 /* start ring page */
-.ring-p {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
+.ring-p {font-size: 30px; text-align: center; font-weight: bold;}
 
-.ring-p2 {
-    font-size: 30px;
-    text-align: center;
-}
+.ring-p2 {font-size: 30px; text-align: center;}
 
-.ring-gallery-container { /* reapply to div before popup if popup doesn't work */
-    display: flex;
-    flex-direction: row;
-    height: 120px;
-    gap: 40px;
-    justify-content: center;
-    left: 30px;
-}
+.ring-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
 
 .ring-image {
     height: 200px;
@@ -175,114 +139,51 @@ h2 {margin: 30px 0 80px 0; font-size: 40px;}
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
 /* end rings page */
 
 /* bracelets and cuffs begin */
-.bracelets-gallery-container {
-    display: flex;
-    flex-direction: row;
-    height: 120px;
-    gap: 40px;
-    justify-content: center;
-    left: 30px;
-}
+.bracelets-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
 
-.bracelets-image {
-    height: 120px;
-    width: 90px;
-    transition: transform .2s; /* Animation */
+.bracelets-image {height: 120px; width: 90px; transition: transform .2s; /* Animation */}
 
-}
-
-.bracelets-label {
-    font-size: 40px;
-    text-align: center;
-}
+.bracelets-label {font-size: 40px; text-align: center;}
   
 .bracelets-image:hover {
-    transform: scale(2.0); /* (200% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
+    transform: scale(2.0); /* (200% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 /* bracelets and cuffs end */
 
 /* start woods page */
 /* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    border: 5px solid green;
-    text-align: center; 
-    height: fit-content;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.column {float: left; width: 50%; padding: 10px; border: 5px solid green; text-align: center; height: fit-content;}
 
-  .woods-head {
-    font-size: 30px;
-  }
+/* Clear floats after the columns */
+.row:after {content: ""; display: table; clear: both;}
 
-  .column-text {
-    font-size: 20px;
-  }
+.woods-head {font-size: 30px;}
 
-  .wood-list {
-    text-align: left;
-  }
+.column-text {font-size: 20px;}
+
+.wood-list {text-align: left;}
   
 /* begin finishes */
-.finish-head{
-    font-size: 30px;
-    text-align: center;
-}
+.finish-head{font-size: 30px; text-align: center;}
 
-.finish-p {
-    font-size: 25px;
-    text-align: center;
-}
+.finish-p {font-size: 25px; text-align: center;}
 
-.grid {
-    display: grid;
-    grid-template-columns: 5% 7% 85%;
-}
+.grid {display: grid; grid-template-columns: 5% 7% 85%;}
 
-.finish-desc {
-    font-size: 20px;
-    margin-top: 40px;
-}
+.finish-desc {font-size: 20px; margin-top: 40px;}
 
-.image-text {
-    width: auto;
-    font-size: 20px;
-    height: 50px;
-    display: inline-block;
-    margin-top: 10px;
-    text-indent: 230px;
-}
+.image-text {width: auto; font-size: 20px; height: 50px; display: inline-block; margin-top: 10px; text-indent: 230px;}
 
-.finish-image {
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
-}
+.finish-image {width: 90px; height: 90px; margin-left: 20px;}
 
-.poly-para1 {
-    text-indent: 230px;
-    font-size: 20px;
-}
+.poly-para1 {text-indent: 230px; font-size: 20px;}
 
-.poly-para2 {
-    text-indent: 280px;
-    font-size: 20px;
-}
+.poly-para2 {text-indent: 280px; font-size: 20px;}
 /* end finishes */
 
 .post-div_space {
     bottom: 50px;
 }
-
