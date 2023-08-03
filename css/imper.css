@@ -1,3 +1,4 @@
+/* local site: http://www.local.imperfectperfection.com/rings.html */
 @font-face {
     font-family: 'WoodenPlanks';
     src: url('/images/fonts/WoodenPlanks.ttf');
@@ -104,20 +105,32 @@ h2 {margin: 30px 0 80px 0; font-size: 40px;}
 
 .ring-image {
     height: 200px;
-    width: 220px;
+    width: 160px;
+    z-index: 1;
+}
+
+.pine_ring {
+        height: 200px;
+        width: 160px;
+        z-index: 1;
 }
 
 .ring-label {
-    display: inline-block;
     font-size: 40px;
-    margin-left: 100px;
-    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+   /* float: left */
 }
 
  /* Popup container */
+ span {
+    display: flex;
+    gap: 20px;
+ }
  .popup {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
     cursor: pointer;
     margin-left: 30px;
   }
@@ -126,13 +139,14 @@ h2 {margin: 30px 0 80px 0; font-size: 40px;}
   .popup .popupImg {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
+    float: right;
     visibility: hidden;
     width: 160px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    left: 300px;
+    margin-left: 110%;
     bottom: -5px;
   }
   
