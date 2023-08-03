@@ -1,3 +1,4 @@
+/* local site: http://www.local.imperfectperfection.com/rings.html */
 @font-face {font-family: 'WoodenPlanks'; src: url('/images/fonts/WoodenPlanks.ttf');}
 
 /* stretches page to edge*/
@@ -12,7 +13,7 @@ html {background-color: white; height: 100%}
 body {min-height: 100vh; padding-bottom: 50px;}
 
 /* title bar start */
-.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/pics/VPTX_0469_Wood_Albedo.jpg');} 
+.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
 
 h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top: 20px;}
 /* title bar end */
@@ -66,9 +67,79 @@ h2 {  /* element selector*/
 
 .ring-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
 
-.ring-image {height: 120px; width: 90px;}
+.ring-image {
+    height: 200px;
+    width: 160px;
+    z-index: 1;
+}
 
-.ring-label {font-size: 40px; text-align: center;}
+.pine_ring {
+        height: 200px;
+        width: 160px;
+        z-index: 1;
+}
+
+.ring-label {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+   /* float: left */
+}
+
+ /* Popup container */
+ span {
+    display: flex;
+    gap: 20px;
+ }
+ .popup {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popupImg {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    float: right;
+    visibility: hidden;
+    width: 160px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: 110%;
+    bottom: -5px;
+  }
+  
+  /* Popup arrow */
+  .popup .popupImg::after {
+    content: "";
+    position: relative;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
 /* end rings page */
 
 /* bracelets and cuffs begin */
