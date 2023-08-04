@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- after a change, in Powershell ssh into server, run "git fetch" and "git pull" to update page -->
     <!-- add googletagmanager -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0"
         charset="UTF-8">
@@ -9,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="/css/imper.css">
 </head>
 
-<body>
+<body onload="picArray()">
     <div class="box-wrapper">
         <div>
-            <h1 class="h1-align">Imperfect Perfection</h1>
+            <h1>Imperfect Perfection</h1>
         </div>
 
         <div>
@@ -33,6 +34,7 @@
             </ul>
         </div>
 
+<<<<<<< HEAD
         <div class="gallery">
             <div class="gallery-container">
                 <h2>Some of my projects</h2>
@@ -53,14 +55,24 @@
             <a class="back" onclick="plusSlides(-1)">&#10094;</a> 
             <a class="forward" onclick="plusSlides(1)">&#10095;</a>
         <div>
+=======
+        <div onclick="picArray()">
+            <div class="img-box">
+                <div class="slider">
+                    <h2>Some of my projects</h2>
+                    <img class="slider_img" src="/images/carousel/20220114_214003.jpg" alt="plywood_semicolon">
+                    <img class="slider_img" src="/images/carousel/20220912_004333.jpg" alt="">
+                    <img class="slider_img" src="/images/carousel/20220912_004400.jpg" alt="">
+                    <img class="slider_img" src="/images/carousel/IMG_6256.jpg" alt="">
+                </div>
+            </div>                
+        </div>
+>>>>>>> main
 
-        <div class="gallery-controls">
-            <button class="gallery-controls-previous">
-                Previous
-            </button>
-            <button class="gallery-controls-next">
-                Next
-            </button>
+        <div></div>
+            <button class="btn" onclick="prev()">Previous</button>
+            <div class="divider"></div>
+            <button class="btn" onclick="next()">Next</button>
         </div>
     </div>
 
