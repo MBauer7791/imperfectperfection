@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-function showWood1() {
-  var popup = document.getElementById("myPopupWood1");
-  popup.classList.toggle("show");
-}
-=======
 // When the user clicks on <div>, open the popup
 function picArray() {
     const results = fs.readdirSync(path.resolve(_dirname,"images"))
@@ -29,9 +23,46 @@ function setImg() {
     return slider_img.setAttribute('src', 'images/' + images[i]);
 }
 
-// Ring page popup gallery
-function showImg() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
->>>>>>> main
+// index pic carousel
+import { readdirSync } from "fs";
+import { resolve } from "path";
+
+function showImg1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+
+function showImg2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+
+function showImg3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+
+function showImg4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+
+function showImg5() {
+  var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show");
+}
+
+function showImg6() {
+  var popup = document.getElementById("myPopup6");
+  popup.classList.toggle("show");
+}
+
+function showImg7() {
+  var popup = document.getElementById("myPopup7");
+  popup.classList.toggle("show");
+}
+
+function showImg8() {
+  var popup = document.getElementById("myPopup8");
+  popup.classList.toggle("show");
+}

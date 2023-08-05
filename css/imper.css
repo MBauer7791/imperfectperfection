@@ -9,23 +9,18 @@
 .box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
 
 html {background-color: white; height: 100%}
-html {background-color: white; height: 100%}
 
-body {min-height: 100vh; padding-bottom: 50px;}
 body {min-height: 100vh; padding-bottom: 50px;}
 
 /* title bar start */
-.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/pics/VPTX_0469_Wood_Albedo.jpg');} 
+.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
 
-h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top: 20px;}
 h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top: 20px;}
 /* title bar end */
 
 /*menu bar start */
 .menu {height: 50px; width: 100%; display: block; padding: 10px; background-color: black;} 
-.menu {height: 50px; width: 100%; display: block; padding: 10px; background-color: black;} 
   
-li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: center; text-align: center; margin: 25px;}
 li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: center; text-align: center; margin: 25px;}
 /* menu bar end */
 
@@ -143,42 +138,44 @@ h2 {  /* element selector*/
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+/* woods end */
+
 
 /* start ring page */
-.ring-p {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
+.ring-p {font-size: 30px; text-align: center; font-weight: bold;}
 
-.ring-p2 {
-    font-size: 30px;
-    text-align: center;
-}
+.ring-p2 {font-size: 30px; text-align: center;}
 
-.ring-gallery-container { /* reapply to div before popup if popup doesn't work */
-    display: flex;
-    flex-direction: row;
-    height: 120px;
-    gap: 40px;
-    justify-content: center;
-    left: 30px;
-}
+.ring-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
 
 .ring-image {
     height: 200px;
-    width: 220px;
+    width: 160px;
+    z-index: 1;
+}
+
+.pine_ring {
+        height: 200px;
+        width: 160px;
+        z-index: 1;
 }
 
 .ring-label {
     font-size: 40px;
-    text-align: center;
+    margin-left: 20px;
+    margin-right: 10px;
+   /* float: left */
 }
 
  /* Popup container */
+ span {
+    display: flex;
+    gap: 20px;
+ }
  .popup {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
     cursor: pointer;
     margin-left: 30px;
   }
@@ -187,13 +184,14 @@ h2 {  /* element selector*/
   .popup .popupImg {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
+    float: right;
     visibility: hidden;
     width: 160px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    left: 300px;
+    margin-left: 110%;
     bottom: -5px;
   }
   
@@ -222,6 +220,7 @@ h2 {  /* element selector*/
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
 /* end rings page */
 
 /* bracelets and cuffs begin */
