@@ -29,23 +29,6 @@ li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: ce
 li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: center; text-align: center; margin: 25px;}
 /* menu bar end */
 
-/* center bar */
-.container2 {
-    display: block;
-    height: 150px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    background-color: black;
-}
-
-.center_bar {    
-    display: block;
-    width: 100%;
-    background-color: black;
-}
-/* end center bar */
-
 /* start image carousel */
 h2 {  /* element selector*/
     margin: 30px 0 80px 0; font-size: 40px;}
@@ -165,7 +148,80 @@ h2 {  /* element selector*/
 .ring-p {
     font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
+
+.ring-p2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.ring-gallery-container { /* reapply to div before popup if popup doesn't work */
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    gap: 40px;
+    justify-content: center;
+    left: 30px;
+}
+
+.ring-image {
+    height: 200px;
+    width: 220px;
+}
+
+.ring-label {
+    font-size: 40px;
+    text-align: center;
+}
+
+ /* Popup container */
+ .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popupImg {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    visibility: hidden;
+    width: 160px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    left: 300px;
+    bottom: -5px;
+  }
+  
+  /* Popup arrow */
+  .popup .popupImg::after {
+    content: "";
+    position: relative;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 /* end rings page */
 
 /* bracelets and cuffs begin */
@@ -181,36 +237,35 @@ h2 {  /* element selector*/
 
 /* start woods page */
 /* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    border: 5px solid green;
-    text-align: center; 
-    height: fit-content;
-  }
+.column {float: left; width: 50%; padding: 10px; border: 5px solid green; text-align: center; height: fit-content;}
+
+/* Clear floats after the columns */
+.row:after {content: ""; display: table; clear: both;}
+
+.woods-head {font-size: 30px;}
+
+.column-text {font-size: 20px;}
+
+.wood-list {text-align: left;}
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* begin finishes */
+.finish-head{font-size: 30px; text-align: center;}
 
-  .woods-head {
-    font-size: 30px;
-  }
+.finish-p {font-size: 25px; text-align: center;}
 
-  .column-text {
-    font-size: 20px;
-  }
+.grid {display: grid; grid-template-columns: 5% 7% 85%;}
 
-  .wood-list {
-    text-align: left;
-  }
-  /* woods finish */
+.finish-desc {font-size: 20px; margin-top: 40px;}
 
-  .menu_space {
-    position: static;
-    top: 200px;
-  }
+.image-text {width: auto; font-size: 20px; height: 50px; display: inline-block; margin-top: 10px; text-indent: 230px;}
+
+.finish-image {width: 90px; height: 90px; margin-left: 20px;}
+
+.poly-para1 {text-indent: 230px; font-size: 20px;}
+
+.poly-para2 {text-indent: 280px; font-size: 20px;}
+/* end finishes */
+
+.post-div_space {
+    bottom: 50px;
+}
