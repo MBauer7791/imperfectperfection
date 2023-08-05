@@ -73,12 +73,6 @@ h2 {  /* element selector*/
     z-index: 1;
 }
 
-.pine_ring {
-        height: 200px;
-        width: 160px;
-        z-index: 1;
-}
-
 .ring-label {
     font-size: 40px;
     margin-left: 20px;
