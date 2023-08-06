@@ -3,10 +3,6 @@
 
 /* stretches page to edge*/
 * {margin: 0; padding: 0; box-sizing: border-box;}
-/* end */
-
-/* title bar start */
-.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
 
 html {background-color: white; height: 100%}
 
@@ -65,7 +61,14 @@ h2 {  /* element selector*/
 
 .ring-p2 {font-size: 30px; text-align: center;}
 
-.ring-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
+.ring-gallery-container { /* reapply to div before popup if popup doesn't work */
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    gap: 40px;
+    justify-content: center;
+    left: 30px;
+}
 
 .ring-image {
     height: 200px;
@@ -166,6 +169,7 @@ h2 {  /* element selector*/
     display: flex;
     gap: 20px;
  }
+
  .popup {
     position: relative;
     display: inline-flex;
@@ -178,47 +182,11 @@ h2 {  /* element selector*/
   .popup .popupImg {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    float: right;
-    visibility: hidden;
-    width: 160px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    margin-left: 110%;
-    bottom: -5px;
-  }
-  
-  /* Popup arrow */
-  .popup .popupImg::after {
-    content: "";
-    position: relative;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
-
-/* end rings page */
-
-/* bracelets and cuffs begin */
-.bracelets-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
+    height: 120px;
+    gap: 40px;
+    justify-content: center;
+    left: 30px;
+}
 
 .bracelets-image {height: 120px; width: 90px; transition: transform .2s; /* Animation */}
 
