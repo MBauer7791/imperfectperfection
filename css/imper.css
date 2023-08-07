@@ -1,5 +1,5 @@
 /* local site: http://www.local.imperfectperfection.com/rings.html */
-@font-face {font-family: 'WoodenPlanks'; src: url('/images/fonts/WoodenPlanks.ttf');}
+@font-face {font-family: 'WoodenPlanks'; src: url('/images/WoodenPlanks.ttf');}
 
 /* stretches page to edge*/
 * {margin: 0; padding: 0; box-sizing: border-box;}
