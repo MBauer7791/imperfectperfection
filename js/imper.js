@@ -1,15 +1,12 @@
 // index pic carousel
-import { readdirSync } from "fs";
-import { resolve } from "path";
-
-function picArray() {
-    const results = fs.readdirSync(path.resolve(_dirname,"images/carousel"))
-    console.log(results)
-}
-
 var slider_img=document.querySelector('.slider_img');
 var images=['20220114_214003,jpg', '20220804_185620.jpg', '20220912_004333.jpg', '20220912_004352.jpg', '20220912_004400.jpg', '20230122_170110.jpg', '20230131_152838.jpg', '20230610_201125.jog', '20230612_201125.jpg', '20230612_233749', '2023067_203739.jpg', 'IMG_1132.jpg', 'IMG_6256.jpg'];
 var i=0;
+var timer;
+
+function startCarousel() {
+  timer=setInterval(next, 2500);
+}
 
 function prev() {
     if(i <= 0) i = images.length;
@@ -24,7 +21,7 @@ function next() {
 }
 
 function setImg() {
-    return slider_img.setAttribute('src', 'images/' + images[i]);
+    return slider_img.setAttribute('src', 'images/carousel/' + images[i]);
 }
 
 // When the user clicks on <div>, open the popup
