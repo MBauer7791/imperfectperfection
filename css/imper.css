@@ -171,3 +171,14 @@ h2 {  /* element selector*/
 .post-div_space {
     bottom: 50px;
 }
+
+/* start news page */
+.news-p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.news2 {
+  text-align:left;
+  font-size: 50px;
+}
