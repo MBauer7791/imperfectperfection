@@ -64,3 +64,8 @@ function showImg8() {
   var popup = document.getElementById("myPopup8");
   popup.classList.toggle("show");
 }
+
+function showCuff1() {
+  var popup = document.getElementById("myPopupCuff1");
+  popup.classList.toggle("show");
+}
