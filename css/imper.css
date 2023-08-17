@@ -52,11 +52,11 @@ h2 {/* element selector*/ margin: 30px 0 80px 0; font-size: 40px;}
 
 .ring-p2 {font-size: 30px; text-align: center;}
 
-.ring-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
+.ring-grid {display: grid; grid-template-columns: [first] 250px [line2] 250px [line3] 250px [line4] 250px [line5] 250px [line6] 250px [line7] 250px; grid-template-rows: 110px 170px 170px 170px 170px; gap: 20px;}
 
-.ring-image {height: 200px; width: 160px; z-index: 1;}
+.ring-image {display: grid; height: 180px; width: 160px; align-self: center; justify-self: center;}
 
-.ring-label {font-size: 40px; margin-left: 20px; margin-right: 10px;}
+.ring-label {display: grid; width: 200px; font-size: 40px; align-self: center; justify-self: center;}
 
 /* Popup container */
 span {display: flex; gap: 20px;}
@@ -99,13 +99,9 @@ span {display: flex; gap: 20px;}
 /* begin finishes */
 .finish-head{font-size: 30px; text-align: center; margin-top: 15px;}
 
-.finish-p {font-size: 25px; text-align: center;}
+.finish-p {font-size: 25px; text-align: center; font-weight: bold;}
 
-.grid {display: grid; grid-template-columns: 200px 700px; gri-template-rows: auto; grid-template-areas:
-  "pic text"
-  "pic text"
-  "pic text"
-  "pic text";}
+.finish-grid {display: grid; grid-template-columns: 200px 700px; grid-template-rows: auto; grid-template-areas: "pic text";}
 
 .finish-desc {font-size: 20px; margin-top: 40px; margin-left: 50px;}
 
