@@ -93,7 +93,14 @@ span {display: flex; gap: 20px;}
 /* Clear floats after the columns */
 .wood-p {margin-left: 10px;}
 
-.wood-image {margin-left: 10px; max-height: 200px; max-width: 160px;}
+/* .wood-image {margin-left: 10px; max-height: 200px; max-width: 160px;} */
+
+.wood-grid {display: grid; grid-template-columns: [first] 250px [line2] 250px [line3] 250px [line4] 250px [line5] 250px [line6] 250px [line7] 250px; grid-template-rows: 110px 110px 110px 110px 110px; gap: 20px;}
+
+.wood-image {display: grid; height: 180px; width: 160px; align-self: center; justify-self: center;}
+
+.wood-label {display: grid; width: 200px; font-size: 40px; align-self: center; justify-self: center;}
+.post-space {margin-top: 30px;}
 /* end woods */
   
 /* begin finishes */
