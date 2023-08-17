@@ -17,14 +17,13 @@ h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top
 /* title bar end */
 
 /*menu bar start */
-.menu {height: 50px; width: 100%; display: block; padding: 10px; background-color: black;} 
+.menu {height: 50px; width: 100%; font-size: 20px; display: inline-grid; grid-template-columns: repeat(6, 250px); grid-template-rows: repeat(2, 150px); justify-content: space-around; justify-items: center; background-color: black;} 
   
-li {display: inline; height: 40px; width: 100%; font-size: 20px; align-items: center; text-align: center; margin: 25px;}
+li {margin-top: 10px;}
 /* menu bar end */
 
 /* start image carousel */
-h2 {  /* element selector*/
-    margin: 30px 0 80px 0; font-size: 40px;}
+h2 {/* element selector*/ margin: 30px 0 80px 0; font-size: 40px;}
 
 .slider {margin: 50px auto; width: 50%;}
 
@@ -55,71 +54,28 @@ h2 {  /* element selector*/
 
 .ring-gallery-container {display: flex; flex-direction: row; height: 120px; gap: 40px; justify-content: center; left: 30px;}
 
-.ring-image {
-    height: 200px;
-    width: 160px;
-    z-index: 1;
-}
+.ring-image {height: 200px; width: 160px; z-index: 1;}
 
-.ring-label {
-    font-size: 40px;
-    margin-left: 20px;
-    margin-right: 10px;
-}
+.ring-label {font-size: 40px; margin-left: 20px; margin-right: 10px;}
 
- /* Popup container */
- span {
-    display: flex;
-    gap: 20px;
- }
- .popup {
-    position: relative;
-    display: inline-flex;
-    flex-direction: row;
-    cursor: pointer;
-    margin-left: 30px;
-  }
+/* Popup container */
+span {display: flex; gap: 20px;}
+
+.popup {position: relative; display: inline-flex; flex-direction: row; cursor: pointer; margin-left: 30px;  }
   
-  /* The actual popup (appears on top) */
-  .popup .popupImg {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    float: right;
-    visibility: hidden;
-    width: 160px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    margin-left: 110%;
-    bottom: -5px;
-  }
+/* The actual popup (appears on top) */
+.popup .popupImg {display: flex; flex-direction: row; gap: 10px; float: right; visibility: hidden; width: 160px; padding: 8px 0; position: absolute; z-index: 1; margin-left: 110%; bottom: -5px;}
   
-  /* Popup arrow */
-  .popup .popupImg::after {
-    content: "";
-    position: relative;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
+/* Popup arrow */
+.popup .popupImg::after {content: ""; position: relative; border-style: solid;  border-color: #555 transparent transparent transparent;}
   
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {visibility: visible; -webkit-animation: fadeIn 1s; animation: fadeIn 1s;}
   
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {from {opacity: 0;}; to {opacity: 1;}}
   
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
+@keyframes fadeIn {from {opacity: 0;}; to {opacity:1 ;}}
 /* end rings page */
 
 /* bracelets and cuffs begin */
@@ -135,50 +91,36 @@ h2 {  /* element selector*/
 .column {float: left; width: 50%; padding: 10px; border: 5px solid green; text-align: center; height: fit-content;}
 
 /* Clear floats after the columns */
-.wood-p {
-  margin-left: 10px;
-}
+.wood-p {margin-left: 10px;}
 
-.wood-image {
-  margin-left: 10px;
-  max-height: 200px;
-  max-width: 160px;
-}
+.wood-image {margin-left: 10px; max-height: 200px; max-width: 160px;}
 /* end woods */
   
 /* begin finishes */
-.finish-head{font-size: 30px; text-align: center;}
+.finish-head{font-size: 30px; text-align: center; margin-top: 15px;}
 
 .finish-p {font-size: 25px; text-align: center;}
 
-.grid {display: inline-grid; grid-template-columns: 33% 33% 33%;}
-
-.grid-arrange {
-  float: right;
-}
+.grid {display: grid; grid-template-columns: 200px 700px; gri-template-rows: auto; grid-template-areas:
+  "pic text"
+  "pic text"
+  "pic text"
+  "pic text";}
 
 .finish-desc {font-size: 20px; margin-top: 40px; margin-left: 50px;}
 
-.image-text {width: auto; font-size: 20px; height: 50px; display: inline-block; margin-top: 10px; text-indent: 230px;}
+.image-text {width: auto; font-size: 20px; height: 50px; display: grid; margin-top: 10px;}
 
-.finish-image {width: 90px; height: 90px; align-content: center; /*margin-left: 20px; */}
+.finish-image {width: 90px; height: 90px; margin-left: 40px;}
 
-.poly-para1 {text-indent: 230px; font-size: 20px;}
+.poly-para1 {font-size: 20px; margin-left: 20px;}
 
-.poly-para2 {text-indent: 280px; font-size: 20px;}
+
 /* end finishes */
 
-.post-div_space {
-    bottom: 50px;
-}
+.menu-space {position: absolute; top: 240px; width: 100%;}
 
 /* start news page */
-.news-p {
-  text-align: left;
-  font-size: 20px;
-}
+.news-p {text-align: left; font-size: 20px;}
 
-.news2 {
-  text-align:left;
-  font-size: 50px;
-}
+.news2 {text-align:left; font-size: 50px;}
