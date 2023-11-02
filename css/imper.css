@@ -1,129 +1,45 @@
-/* local site: http://www.local.imperfectperfection.com/rings.html */
-@font-face {font-family: 'WoodenPlanks'; src: url('/images/WoodenPlanks.ttf');}
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
 
-/* stretches page to edge*/
-* {margin: 0; padding: 0; box-sizing: border-box;}
-/* end */
-
-/* title bar start */
-.box-wrapper {height: 150px; width: 100%; display: block; text-align: center; background-image: url('/images/VPTX_0469_Wood_Albedo.jpg');} 
-
-html {background-color: white; height: 100%}
-
-body {min-height: 100vh; padding-bottom: 50px;}
-
-/* title bar start */
-h1 {font-size: 100px; font-weight: 900; font-family: 'WoodenPlanks'; padding-top: 20px;}
-/* title bar end */
-
-/*menu bar start */
-.menu {height: 50px; width: 100%; font-size: 20px; display: inline-grid; grid-template-columns: repeat(6, 250px); grid-template-rows: repeat(2, 150px); justify-content: space-around; justify-items: center; background-color: black;} 
-  
-li {margin-top: 10px;}
-/* menu bar end */
-
-/* start image carousel */
-h2 {/* element selector*/ margin: 30px 0 80px 0; font-size: 40px;}
-
-.slider {margin: 50px auto; width: 50%;}
-
-.img-box img{width: 500px; height: 500px;}
-
-.divider {width: 50px; height: auto; display: inline-block;}
-
-.btn {display: inline; border: none; outline: none; background: #888; padding: 10px 30px; font-size: 20px; color: #ddd; cursor: pointer; margin: 10px auto;}
-
-.btn:hover {background: #111;}
-/* end carousel */
-
-/* start about page */
-.about-head {font-size: 40px; text-align: left;}
-
-.about-text {font-size: 30px; text-align: left; margin-left: 5%; margin-right: 5%;}
-/* end about page */
-
-.active {color: blanchedalmond;}
-
-.email {color: white; text-align: center; margin: auto;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*width: 1400px;*/  
 }
 
-/* start ring page */
-.ring-p {font-size: 30px; text-align: center; font-weight: bold;}
+body {
+    /*width: 1366px;*/
+    width: 100%;
+    height: 100%;  
+    margin: 0;
+    padding: 0;            
+}
 
-.ring-p2 {font-size: 30px; text-align: center;}
+/* Title bar */
+.container {box-sizing: border-box;
+    max-width: 1420px;
+}
 
-.ring-grid {display: grid; grid-template-columns: [first] 250px [line2] 250px [line3] 250px [line4] 250px [line5] 250px [line6] 250px [line7] 250px; grid-template-rows: 110px 170px 170px 170px 170px; gap: 20px;}
+.title {display: block; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+        url("https://timberandforestry.org/wp-content/uploads/2023/08/TFF-Timber-and-Forestry-Foundation-1074-1-869x631.jpg");font-size: 5rem;
+        width: 100%; color: rgb(205,133,63);}
 
-.ring-image {display: grid; height: 180px; width: 160px; align-self: center; justify-self: center;}
+.title-box {justify-content: center; height: 10rem; width: 100%; display: flex; align-items: center;}
+/* end */
 
-.ring-label {display: grid; width: 200px; font-size: 40px; align-self: center; justify-self: center;}
+/* modal */
+.modal {background: black;}
 
-/* Popup container */
-span {display: flex; gap: 20px;}
-
-.popup {position: relative; display: inline-flex; flex-direction: row; cursor: pointer; margin-left: 30px;  }
-  
-/* The actual popup (appears on top) */
-.popup .popupImg {display: flex; flex-direction: row; gap: 10px; float: right; visibility: hidden; width: 160px; padding: 8px 0; position: absolute; z-index: 1; margin-left: 110%; bottom: -5px;}
-  
-/* Popup arrow */
-.popup .popupImg::after {content: ""; position: relative; border-style: solid;  border-color: #555 transparent transparent transparent;}
-  
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {visibility: visible; -webkit-animation: fadeIn 1s; animation: fadeIn 1s;}
-  
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {from {opacity: 0;}; to {opacity: 1;}}
-  
-@keyframes fadeIn {from {opacity: 0;}; to {opacity:1 ;}}
-/* end rings page */
-
-/* bracelets and cuffs begin */
-.bracelets-gallery-container {display: flex; flex-direction: row; height: 200px; gap: 40px; left: 30px;}
-
-.bracelets-image {height: 200px; width: 160px; display: inline-block; transition: transform .2s; /* Animation */}
-
-.bracelets-label {font-size: 40px;text-align: left; display: inline-block;}
-/* bracelets and cuffs end */
-
-/* start woods page */
-/* Create two equal columns that floats next to each other */
-.column {float: left; width: 50%; padding: 10px; border: 5px solid green; text-align: center; height: fit-content;}
-
-/* Clear floats after the columns */
-.wood-p {margin-left: 10px;}
-
-/* .wood-image {margin-left: 10px; max-height: 200px; max-width: 160px;} */
-
-.wood-grid {display: grid; grid-template-columns: [first] 250px [line2] 250px [line3] 250px [line4] 250px [line5] 250px [line6] 250px [line7] 250px; grid-template-rows: 110px 110px 110px 110px 110px; gap: 20px;}
-
-.wood-image {display: grid; height: 180px; width: 160px; align-self: center; justify-self: center;}
-
-.wood-label {display: grid; width: 200px; font-size: 40px; align-self: center; justify-self: center;}
-.post-space {margin-top: 30px;}
-/* end woods */
-  
-/* begin finishes */
-.finish-head{font-size: 30px; text-align: center; margin-top: 15px;}
-
-.finish-p {font-size: 25px; text-align: center; font-weight: bold;}
-
-.finish-grid {display: grid; grid-template-columns: 200px 700px; grid-template-rows: auto; grid-template-areas: "pic text";}
-
-.finish-desc {font-size: 20px; margin-top: 40px; margin-left: 50px;}
-
-.image-text {width: auto; font-size: 20px; height: 50px; display: grid; margin-top: 10px;}
-
-.finish-image {width: 90px; height: 90px; margin-left: 40px;}
-
-.poly-para1 {font-size: 20px; margin-left: 20px;}
-
-
-/* end finishes */
-
-.menu-space {position: absolute; top: 240px; width: 100%;}
-
-/* start news page */
-.news-p {text-align: left; font-size: 20px;}
-
-.news2 {text-align:left; font-size: 50px;}
+.grid {height: 40px;}
