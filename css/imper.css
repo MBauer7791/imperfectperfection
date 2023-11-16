@@ -43,10 +43,20 @@ body {
 .row {height: 5rem;}
 /* end */
 
-/* card */
+/* ring card */
 .card {width: 15rem;}
 
 button {display: block; width: 5rem;}
 
 /* modal */
 .modal {background: black; width: 100rem; height: 10rem;}
+
+/* carousel and index */
+.slider {display: flex; margin: 50px auto; width: 50%; justify-content: center;}
+
+.img-box img {display: flex; width: 300px; height: 300px;}
+
+.news {font-size: 5rem;}
+
+.slider-title {font-size: 3rem;}
+/* end */

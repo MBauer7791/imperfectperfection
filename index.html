@@ -20,32 +20,40 @@
     </div>
   </div>
 
-  <!-- copy \/ modal to rings page, build grid, insert pics, attach to pics -->
-  <div>
-    <div class="grid">
-      <div class="modal row" tabindex="-1">
-        <div class="modal-dialog col-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Purple Heart</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Story</button>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Pics</button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="container-fluid">
+    <div class="row row-cols-5 menu">
+      <a href="/" style="color:#B8860B" class="col">Home</a>
+      <a class="active" href="/rings.html" style="color:#B8860B" class="col">Rings</a>
+      <a href="/bracelets.html" style="color:#B8860B" class="col">Bracelets and Cuffs</a>
+      <a href="/bowties.html" style="color:#B8860B">Bow Ties</a>
+      <a href="/wods.html" style="color: #88860B">Woods</a>
+      <a href="/finishes.html" style="color:#B8860B">Finishes</a>
+      <a href="/designs.html" style="color:#B8860B">Design Options</a>
+      <a href="/ideas.html" style="color:#B8860B">Ideas and Suggestions</a>
+      <a href="/news.html" style="color:#B8860B">News</a>
+      <a href="/about.html" style="color:#B8860B">About</a>
     </div>
   </div>
+
+  <div>
+    <div>
+      <p class="news text-center">New <a href="/news.html" style="color:#B8860B">News</a> just for you! </p>
+      <p class="text-center slider-title">Some of my projects</p>
+    </div>
+    <div class="img-box">
+        <div class="slider">
+          <img class="slider_img" src="/images/carousel/20220114_214003.jpg" alt="">
+        </div>
+    </div>
+  </div>                
+</div>
       
   <script src="/js/imper.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script>
+    startCarousel();
+  </script>
 </body>
 
 </html>
