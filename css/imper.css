@@ -47,3 +47,6 @@ h3 {margin-top: 0;}
 
 .slider-title {font-size: 3rem;}
 /* end */
+
+/* woods */
+.card-bRosewood {display: flex; width: 15rem; border: none;}
