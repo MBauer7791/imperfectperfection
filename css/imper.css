@@ -13,18 +13,17 @@ body {
 
 /* Title bar */
 .container-fluid {box-sizing: border-box;
-    max-width: 100%;
-}
+    max-width: 100%; margin: 0; padding: 0;}
 
 .title {display: block; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
         url("https://timberandforestry.org/wp-content/uploads/2023/08/TFF-Timber-and-Forestry-Foundation-1074-1-869x631.jpg"); font-size: 5rem;
         width: 100%; color: rgb(205,133,63);}
 
-.title-box {justify-content: center; height: 11rem; width: 100%; display: flex; align-items: center;}
+.title-box {justify-content: center; height: 11rem; width: 100%; display: flex; align-items: center; margin: 0; padding: 0;}
 /* end */
 
 /* menu */
-.menu {display: inline-block; height: 20rem; font-size: 20px; text-align: center; justify-content: space-around; align-items: center; background-color: black; position: relative; top: -10px;} 
+.menu {display: flex; height: 20rem; font-size: 20px; text-align: center; justify-content: space-around; align-items: center; background-color: black; position: relative; top: -10px;} 
 
 .row {height: 5rem;}
 /* end */
