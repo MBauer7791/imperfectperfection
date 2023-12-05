@@ -8,88 +8,30 @@ function startCarousel() {
   timer=setInterval(next, 2500);
 }
 
-function prev() {
-    if(i <= 0) i = images.length;
-    i--;
-    return setImg();
-}
-
-function next() {
-    if(i >= images.length-1)i=-1;
-    i++;
-    return setImg();
-}
-
 function setImg() {
     return slider_img.setAttribute('src', 'images/carousel/' + images[i]);
 }
 
-// When the user clicks on pic, open the popup
-function showImg1() {
-  var popup = document.getElementById("myPopup1");
-  popup.classList.toggle("show");
-}
-
-function showImg2() {
-  var popup = document.getElementById("myPopup2");
-  popup.classList.toggle("show");
-}
-
-function showImg3() {
-  var popup = document.getElementById("myPopup3");
-  popup.classList.toggle("show");
-}
-
-function showImg4() {
-  var popup = document.getElementById("myPopup4");
-  popup.classList.toggle("show");
-}
-
-function showImg5() {
-  var popup = document.getElementById("myPopup5");
-  popup.classList.toggle("show");
-}
-
-function showImg6() {
-  var popup = document.getElementById("myPopup6");
-  popup.classList.toggle("show");
-}
-
-function showImg7() {
-  var popup = document.getElementById("myPopup7");
-  popup.classList.toggle("show");
-}
-
-function showImg8() {
-  var popup = document.getElementById("myPopup8");
-  popup.classList.toggle("show");
-}
-
-function showCuff1() {
-  var popup = document.getElementById("myPopupCuff1");
-  popup.classList.toggle("show");
-}
-
 // Get the modal
-var modal = document.getElementById('ambrosia-maple');
+//var modal = document.getElementById('ambrosia-maple');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('ambrosia-maple');
-var modalImg = document.getElementById("ambrosia-maple");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+//var img = document.getElementById('snakewood');
+//var modalImg = document.getElementById("snakewood");
+//var captionText = document.getElementById("caption");
+//img.onclick = function(){
+//  modal.style.display = "block";
+//  modalImg.src = this.src;
+//  captionText.innerHTML = this.alt;
+//}
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-} 
+//span.onclick = function() {
+//  modal.style.display = "none";
+//} 
 
 
 //$('#exampleModal').on('show.bs.modal', function (event) {
@@ -103,8 +45,19 @@ span.onclick = function() {
 //})
 
 // jquery setup
-//$('#snakewood').modal('show')
-
+//$("#snakewood").function('showModal')
+//
 //$(document).ready(function(){
 //  $("#snakewood").modal("show");
 //});
+
+//var modalImage=document.getElementById('modal1');
+//modalImage.addEventListener('click', function(showModal) {
+//  console
+//})
+
+$(document).ready(function(){
+  $("#myButton").click(function(){
+    $("#myModal").modal();
+  });
+});

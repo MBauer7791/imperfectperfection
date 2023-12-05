@@ -26,16 +26,16 @@
 
     <div class="container-fluid">
         <div class="row row-cols-5 menu">
-            <a href="/" style="color:#B8860B" class="col">Home</a>
-            <a class="active" href="/rings.html" style="color:#B8860B" class="col">Rings</a>
-            <a href="/bracelets.html" style="color:#B8860B" class="col">Bracelets and Cuffs</a>
-            <a href="/bowties.html" style="color:#B8860B">Bow Ties</a>
-            <a href="/woods.html" style="color: #88860B">Woods</a>
-            <a href="/finishes.html" style="color:#B8860B">Finishes</a>
-            <a href="/designs.html" style="color:#B8860B">Design Options</a>
-            <a href="/ideas.html" style="color:#B8860B">Ideas and Suggestions</a>
-            <a href="/news.html" style="color:#B8860B">News</a>
-            <a href="/about.html" style="color:#B8860B">About</a>
+            <a href="/" style="color:white">Home</a>
+            <a class="active" href="/rings.html" style="color:white">Rings</a>
+            <a href="/bowties.html" style="color:white">Bow Ties</a>
+            <a href="/other.html" style="color:white">Other</a>  
+            <a href="/woods.html" style="color: white">Woods</a>           
+            <a href="/finishes.html" style="color:white">Finishes</a>
+            <a href="/designs.html" style="color:white">Design Options</a>
+            <a href="/ideas.html" style="color:white">Ideas and Suggestions</a>
+            <a href="/news.html" style="color:white">News</a>
+            <a href="/about.html" style="color:white">About</a>
         </div>
     </div>
 
@@ -46,34 +46,33 @@
                 <div class="card-body">
                     <h5 class="card-title">Snakewood</h5>
                         <p class="card-text gx-0">His size 13 Her size 7.</p>
+                        <button type="button" class="btn text-light bg-dark" id="myBtn" data-bs-toggle="modal" data-bs-target="snakewood">Pics</button>
                         <div class="d-flex">
                             <!-- modal  onClick="modalShow() -->
-                            <div class="modal fade" id="snakewood" tabindex="-1" aria-labelledby="snakewood" aria-hidden="true">
-                                <div class="modal-dialog">
+                            <div class="modal" id="myModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h3 class="modal-title">J</h3>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h3 class="modal-title">Snakewood</h3>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <picture class="container-fluid" rel="modal:open">
-                                                        <img src="images/snakewood/20230614_072107.jpg" alt=""/>
+                                        <div class="modal-body container-fluid">
+                                            <!-- modal button -->
+                                            <section class="modal hidden">
+                                                <div class="row rows-cols-6">
+                                                    <div rel="modal:open"> <!-- container-fluid -->
+                                                        <img src="images/snakewood/20230614_072107.jpg" id="modal1" alt=""/>
                                                         <img src="images/snakewood/20230614_072116.jpg" alt=""/>
-                                                    </picture>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </section>
                                         </div>
                                     </div>                                
                                 </div>                                
-                            </div>
-                        <!-- modal button -->
-                        <button type="button" class="btn text-light bg-dark" data-bs-toggle="modal" data-bs-target="exampleModal">Pics</button>
+                            </div>                            
                         </div>
                 </div>
             </div>
-
             <div class="card">
                 <img src="images/snakewood/20230614_072101.jpg" class="card-img-top" alt="his and hers snakewood rings">
                 <div class="card-body">
@@ -86,7 +85,6 @@
                         </div>
                 </div>
             </div>
-
             <div class="card">
                 <img src="images/snakewood/20230614_072101.jpg" class="card-img-top" alt="his and hers snakewood rings">
                 <div class="card-body">
@@ -99,7 +97,6 @@
                         </div>
                 </div>
             </div>
-
             <div class="card">
                 <img src="images/snakewood/20230614_072101.jpg" class="card-img-top" alt="his and hers snakewood rings">
                 <div class="card-body">
@@ -112,7 +109,6 @@
                         </div>
                 </div>
             </div>
-
             <div class="card">
                 <img src="images/snakewood/20230614_072101.jpg" class="card-img-top" alt="his and hers snakewood rings">
                 <div class="card-body">
@@ -125,7 +121,6 @@
                         </div>
                 </div>
             </div>
-
             <div class="card">
                 <img src="images/snakewood/20230614_072101.jpg" class="card-img-top" alt="his and hers snakewood rings">
                 <div class="card-body">
