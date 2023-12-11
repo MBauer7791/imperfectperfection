@@ -17,3 +17,28 @@ function next() {
   i++;
   return setImg();
 }
+
+//var modal = document.getElementById("brazilian");
+//var openBtn = document.getElementById("openModal");
+//var closeBtn = document.getElementsByClassName("close")[0];
+//
+//openBtn.onclick = function() {
+//  modal.style.display = "block";
+//}
+//
+//closeBtn.onclick = function() {
+//  modal.style.display = "none";
+//}
+//
+//window.onclick = function(event) {
+//  if (event.target == modal) {
+//    modal.style.display = "none";
+//  }
+//}
+
+const modalNumber=getElementById();
+switch (modalNumber) {
+  case openModal1:
+    
+
+}
