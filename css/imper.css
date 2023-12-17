@@ -59,11 +59,17 @@ button {display: block; width: 5rem;}
   margin-left: 5px;
 }
 
-.close {
-  position: top-right;
-  color: black;
-  font-size: 28px;
-  font-weight: bold;
+.close-icon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  color: red;
+  background-color: blue;
+  cursor: pointer;
+  position: absolute;
+  float: right;
+  top: 8px;
+  right: 16px;
 }
 
 .close:hover,
@@ -72,7 +78,13 @@ button {display: block; width: 5rem;}
   text-decoration: none;
   cursor: pointer;
 }
+
 .ringPic {display: flex; height: 10rem; width: 10rem; margin-left: 5px;}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
 /* end */
 
 /* index:carousel */

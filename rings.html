@@ -39,14 +39,25 @@
         </div>
     </div>
 
+    <!-- dropdown -->
+    <div class="dropdown show ml-5 sticky-top">
+        <a class="btn bg-dark text-light dropdown-toggle d-inline-flex justify-content-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" z-index="10">
+          Contacts</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://www.facebook.com/marc.bauer.792"><img id="icon" src="images/facebook.png"></a>
+            <a class="dropdown-item" href="https://www.instagram.com/brobauer"><img id="icon" src="images/instagram.jpg"></a>
+            <a class="dropdown-item" href="https://www.etsy.com/shop/imperfectionbymarc/?etsrc=sdt"><img id="icon" src="images/etsy.png"></a>
+        </div>
+    </div>
+
     <div class="container-fluid">
-        <div class="row row-cols-6">
+        <div class="row row-cols-6" z-index="0">
             <div class="card">
                 <img src="images/brazwalnut/1000001591.jpg" class="card-img-top" alt="brazilian walnut with copper wire">
                 <div class="card-body">
                     <h5 class="card-title">Brazilian Walnut</h5>
                     <p class="card-text gx-0"></p>
-                    <button type="button" class="btn text-light bg-dark" id="openModal1">Pics</button>                        
+                    <button type="button" class="btn text-light bg-dark" id="openModal" data-dismiss="modal" data-target="#modal1" data-toggle="modal">Pics</button>                        
                 </div>
             </div>
             <div class="card">
@@ -54,7 +65,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cocobolo</h5>
                     <p class="card-text gx-0"></p>
-                    <button type="button" class="btn text-light bg-dark" id="openModal">Pics</button>                        
+                    <button type="button" class="btn text-light bg-dark" id="openModal" data-toggle="modal" data-target="#modal2" data-dismiss="modal" data-target="modal2">Pics</button>                        
                 </div>
             </div>
             <div class="card">
@@ -107,23 +118,23 @@
             </div>
         </div>
 
-        <div id="brazilian" class="modal">
+        <!-- modals -->
+        <div id="modal1" class="modal fade" z-index="1000">
             <div class="modal-content">
-                <img class="ringPic" src="images/brazwalnut/20220731_203923.jpg" target="_blank">
+                <img class="ringPic" src="images/brazwalnut/20220731_203923.jpg" target="_blank" z-index="1000">
                 <img class="ringPic" src="images/brazwalnut/20220807_192504.jpg" target="_blank">
                 images/brazwalnut/20220807_192520.jpg
                 images/brazwalnut/20230419_081952.jpg
                 images/brazwalnut/20230222_081010.jpg
                 images/brazwalnut/20230222_080957.jpg
-
-                <span class="close">&times;</span>
+                <button type="button" class="close-icon">&times;</button>
             </div>
         </div>
-        <div id="cocobolo" class="modal">
+        <div id="modal2" class="modal fade">
             <div class="modal-content">
                 <img class="ringPic" src="images/cocobolo/20221220_080634.jpg" target="_blank">
                 <img class="ringPic" src="" target="_blank">
-                <span class="close">&times;</span>
+                <span class="close" data-dismiss>&times;</span>
             </div>
         </div>
         <div id="ebony" class="modal">

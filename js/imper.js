@@ -18,27 +18,42 @@ function next() {
   return setImg();
 }
 
-//var modal = document.getElementById("brazilian");
-//var openBtn = document.getElementById("openModal");
-//var closeBtn = document.getElementsByClassName("close")[0];
-//
+//var modal = document.getElementById();
+var openBtn = document.getElementById("openModal");
+var closeBtn = document.getElementsByClassName("close");
+
 //openBtn.onclick = function() {
 //  modal.style.display = "block";
 //}
-//
-//closeBtn.onclick = function() {
-//  modal.style.display = "none";
-//}
-//
-//window.onclick = function(event) {
-//  if (event.target == modal) {
-//    modal.style.display = "none";
-//  }
-//}
 
-const modalNumber=getElementById();
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closeBtn[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+const modalNumber=getElementById("id");
 switch (modalNumber) {
-  case openModal1:
-    
+  case "modal1": 
+    openBtn.onclick = function() {
+      modalNumber.style.display= "block";
+    }
+    break;
 
+  case "modal2":
+    openBtn.onclick = function() {
+      modalNumber.style.display= "block";
+    }
+    break;
 }
