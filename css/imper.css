@@ -1,19 +1,9 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+* {padding: 0; margin: 0; box-sizing: border-box;}
 
-body {
-    width: 100%;
-    height: 100%;  
-    margin: 0;
-    padding: 0;            
-}
+body {width: 100%; height: 100%; margin: 0; padding: 0;}
 
 /* Title bar */
-.container-fluid {box-sizing: border-box;
-    max-width: 100%; margin: 0; padding: 0; background-color: black;}
+.container-fluid {box-sizing: border-box; max-width: 100%; margin: 0; padding: 0; background-color: black;}
 
 .title {display: block; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
         url("https://timberandforestry.org/wp-content/uploads/2023/08/TFF-Timber-and-Forestry-Foundation-1074-1-869x631.jpg"); font-size: 5rem;
@@ -34,13 +24,13 @@ body {
 button {display: block; width: 5rem;}
 
 /* modal */
+.ringPic {display: flex; height: 8rem; width: 8rem; margin: 10px;}
 
-.ringPic {display: flex; height: 10rem; width: 10rem; margin-left: 5px;}
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
+.top-right {position: absolute; top: 8px; right: 16px;}
+
+.modal-body{display: flex; flex-direction: row;}
+
+.modal-dialog {display: flex; max-width: 80rem;}
 /* end */
 
 /* index:carousel */
@@ -59,4 +49,10 @@ button {display: block; width: 5rem;}
 
 /* dropdown */
 #icon {display: flex; width: 5rem; height: 5rem; margin-left: 10px;}
+
 .dropdown-menu {margin-left: -20px; border: none;}
+/* end */
+
+/* modal */
+
+/* end*/
